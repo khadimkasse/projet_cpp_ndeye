@@ -1,0 +1,13 @@
+INSERT INTO mysql.user (User,Host,authentication_string,ssl_cipher,x509_issuer,x509_subject) VALUES('user_projet_cpp','localhost',PASSWORD('Sokhna'),'','','');
+
+CREATE DATABASE bdd_projet_cpp;
+
+GRANT ALL PRIVILEGES ON bdd_projet_cpp.* TO user_projet_cpp@localhost;
+
+FLUSH PRIVILEGES;
+
+//Se connecter à la base de données
+mysql -h localhost -u user_projet_cpp -p bdd_projet_cpp
+//mot de passe : Sokhna
+
+CREATE TABLE etudiants(numero_etudiant int, nom varchar(255), prenom varchar(255), date_de_naissance varchar(255), numero_de_telephone varchar(255), adresse varchar(255));

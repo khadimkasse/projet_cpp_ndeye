@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AjouterEtudiant</class>
+ <widget class="QDialog" name="AjouterEtudiant">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>125</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="txt_nom">
+      <property name="text">
+       <string>Nom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="txt_prenom">
+      <property name="text">
+       <string>Prénom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="txt_Netud">
+      <property name="text">
+       <string>N° Etudiant</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="txt_Datenaiss">
+      <property name="text">
+       <string>Date de naissance</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="txt_NTel">
+      <property name="text">
+       <string>N° Telephone</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="txt_Adresse">
+      <property name="text">
+       <string>Adresse</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>231</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="lineEditNom"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditPrenom"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditNumeroEtudiant"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditDateDeNaissance"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditNumTel"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditAdresse">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_AjouterEtud">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>250</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Retour</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
