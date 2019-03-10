@@ -15,6 +15,7 @@ toute la logique de sauvegarde avec des classes comme il faut. */
 
 QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
 
+
 AjouterEtudiant::AjouterEtudiant(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AjouterEtudiant)
@@ -43,28 +44,31 @@ void AjouterEtudiant::on_pushButton_AjouterEtud_clicked()
     db.setPassword("Sokhna");
     db.open();
 
-    QString Nom,Prenom,Num_Etudiant,Date_de_naissance,Num_de_Tel,Adresse;
-    Nom=ui->lineEditNom->text();
-    Prenom=ui->lineEditPrenom->text();
-    Num_Etudiant=ui->lineEditNumeroEtudiant->text();
-    Date_de_naissance =ui->lineEditDateDeNaissance->text();
-    Num_de_Tel=ui->lineEditNumTel->text();
-    Adresse=ui->lineEditAdresse->text();
+    QString nom,prenom,num_Etudiant,date_de_naissance,num_de_tel,adresse;
+    nom=ui->lineEditNom->text();
+    prenom=ui->lineEditPrenom->text();
+    num_Etudiant=ui->lineEditNumeroEtudiant->text();
+    date_de_naissance =ui->lineEditDateDeNaissance->text();
+    num_de_tel=ui->lineEditNumTel->text();
+    adresse=ui->lineEditAdresse->text();
+
+    /*Etudiant etudiant1("Ndeye Sokhna", "NDIAYE", 21613234, "20/02/1993",
+    "73 Avenue S V", "M2 ESTel", note1Etudiant1);*/
+    this -> etudiantCourant(prenom.toStdString(), nom.toStdString(), num_Etudiant.toStdString(),
+      date_de_naissance.toStdString(), adresse.toStdString(), "");
 
     QSqlQuery qry(db);
-    QString Etudiant;
-
 
     if(db.open()){
 
     qry.prepare("INSERT INTO etudiants (numero_etudiant, nom, prenom, date_de_naissance, numero_de_telephone, adresse)"
                 "VALUES (:newNum_Etudiant,:newNom,:newPrenom,:newDate_de_naissance,:newNum_de_Tel,:newAdresse)");
-    qry.bindValue(":newNum_Etudiant",Num_Etudiant);
-    qry.bindValue(":newNom", Nom);
-    qry.bindValue(":newPrenom",Prenom);
-    qry.bindValue(":newDate_de_naissance",Date_de_naissance);
-    qry.bindValue(":newNum_de_Tel",Num_de_Tel);
-    qry.bindValue(":newAdresse",Adresse);
+    qry.bindValue(":newNum_Etudiant",num_Etudiant);
+    qry.bindValue(":newNom", nom);
+    qry.bindValue(":newPrenom",prenom);
+    qry.bindValue(":newDate_de_naissance",date_de_naissance);
+    qry.bindValue(":newNum_de_Tel",num_de_tel);
+    qry.bindValue(":newAdresse",adresse);
     bool ok2 = qry.exec();
 
    if(ok2){

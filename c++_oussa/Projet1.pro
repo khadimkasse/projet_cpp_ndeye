@@ -6,8 +6,6 @@
 
 QT       += core gui sql
 
-
-
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Projet1
@@ -19,13 +17,17 @@ SOURCES += main.cpp\
     platforme1.cpp \
     dialog2.cpp \
     dialogm.cpp \
-    ajouteretudiant.cpp
+    ajouteretudiant.cpp \
+    ../sokhna_cpp/Personne.cpp \
+    ../sokhna_cpp/Etudiant.cpp
 
 HEADERS  += mainwindow.h \
     platforme1.h \
     dialog2.h \
     dialogm.h \
-    ajouteretudiant.h
+    ajouteretudiant.h \
+    ../sokhna_cpp/Personne.h \
+    ../sokhna_cpp/Etudiant.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \

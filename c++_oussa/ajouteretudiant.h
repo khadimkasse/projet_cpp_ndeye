@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QMessageBox>
+#include "../sokhna_cpp/Etudiant.h"
 
 namespace Ui {
 class AjouterEtudiant;
@@ -24,6 +25,7 @@ private slots:
 
 private:
     Ui::AjouterEtudiant *ui;
+    Etudiant etudiantCourant;
 };
 
 #endif // AJOUTERETUDIANT_H
