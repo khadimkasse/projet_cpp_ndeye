@@ -20,6 +20,7 @@ SOURCES += main.cpp\
     ajouteretudiant.cpp \
     ../sokhna_cpp/Personne.cpp \
     ../sokhna_cpp/Etudiant.cpp
+    ../sokhna_cpp/Note.cpp
 
 HEADERS  += mainwindow.h \
     platforme1.h \
@@ -27,7 +28,8 @@ HEADERS  += mainwindow.h \
     dialogm.h \
     ajouteretudiant.h \
     ../sokhna_cpp/Personne.h \
-    ../sokhna_cpp/Etudiant.h
+    ../sokhna_cpp/Etudiant.h\
+    ../sokhna_cpp/Note.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \

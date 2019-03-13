@@ -10,6 +10,13 @@ std::string dateDeNaissance, std::string adresse) {
 	this->adresse = adresse;	
 } 
 
+Personne::Personne() {
+    this->prenom = "";
+    this->nom = "";
+    this->identifiant = 0;
+    this->dateDeNaissance = "";
+    this->adresse = "";
+}
 Personne::~Personne() {}
 
 string Personne::getPrenom() {

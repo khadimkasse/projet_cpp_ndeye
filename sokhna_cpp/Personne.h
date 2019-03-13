@@ -10,6 +10,7 @@ class Personne
 
 	Personne(std::string prenom, std::string nom, int identifiant, 
 	std::string dateDeNaissance, std::string adresse); 
+    Personne();
 
 	std::string getPrenom(); 
 	void setPrenom(std::string prenom); 

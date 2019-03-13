@@ -52,10 +52,10 @@ void AjouterEtudiant::on_pushButton_AjouterEtud_clicked()
     num_de_tel=ui->lineEditNumTel->text();
     adresse=ui->lineEditAdresse->text();
 
-    /*Etudiant etudiant1("Ndeye Sokhna", "NDIAYE", 21613234, "20/02/1993",
-    "73 Avenue S V", "M2 ESTel", note1Etudiant1);*/
-    this -> etudiantCourant(prenom.toStdString(), nom.toStdString(), num_Etudiant.toStdString(),
-      date_de_naissance.toStdString(), adresse.toStdString(), "");
+    Etudiant etudiant1(nom.toStdString(), prenom.toStdString(), num_Etudiant.toInt(),
+                       num_de_tel.toStdString(), adresse.toStdString(), "");
+
+    this -> etudiantCourant = etudiant1;
 
     QSqlQuery qry(db);
 
