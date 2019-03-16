@@ -3,6 +3,7 @@ Devrait constituer un menu principal permettant d'accéder aux autres pages de l
 #include "dialog2.h"
 #include "ui_dialog2.h"
 #include "ajouteretudiant.h"
+#include "afficheretudiants.h"
 #include "platforme1.h"
 #include <QMessageBox>
 
@@ -37,4 +38,12 @@ void Dialog2::on_pushButton_5_clicked()
 void Dialog2::on_pushButton_3_clicked()
 {
 
+}
+
+void Dialog2::on_pushButton_4_clicked()
+{
+    hide();
+    AfficherEtudiants afficherEtudiants;
+    afficherEtudiants.setModal(true);
+    afficherEtudiants.exec();
 }

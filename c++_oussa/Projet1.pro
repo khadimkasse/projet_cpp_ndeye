@@ -19,7 +19,9 @@ SOURCES += main.cpp\
     dialogm.cpp \
     ajouteretudiant.cpp \
     ../sokhna_cpp/Personne.cpp \
-    ../sokhna_cpp/Etudiant.cpp
+    ../sokhna_cpp/Etudiant.cpp \
+    afficheretudiants.cpp \
+    connectdb.cpp
     ../sokhna_cpp/Note.cpp
 
 HEADERS  += mainwindow.h \
@@ -29,13 +31,16 @@ HEADERS  += mainwindow.h \
     ajouteretudiant.h \
     ../sokhna_cpp/Personne.h \
     ../sokhna_cpp/Etudiant.h\
-    ../sokhna_cpp/Note.h
+    ../sokhna_cpp/Note.h \
+    afficheretudiants.h \
+    connectdb.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \
     dialog2.ui \
     dialogm.ui \
-    ajouteretudiant.ui
+    ajouteretudiant.ui \
+    afficheretudiants.ui
 
 DISTFILES += \
     requetes_sql_projet_cpp

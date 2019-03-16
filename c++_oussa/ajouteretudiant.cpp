@@ -6,6 +6,7 @@ toute la logique de sauvegarde avec des classes comme il faut. */
 #include "ajouteretudiant.h"
 #include "ui_ajouteretudiant.h"
 #include "dialog2.h"
+#include "connectdb.h"
 #include <QMessageBox>
 #include <QApplication>
 #include <QtSql>
@@ -13,7 +14,7 @@ toute la logique de sauvegarde avec des classes comme il faut. */
 #include <QSqlQuery>
 #include <QSqlDatabase>
 
-QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+ConnectDB connectDB;
 
 
 AjouterEtudiant::AjouterEtudiant(QWidget *parent) :
@@ -38,11 +39,8 @@ void AjouterEtudiant::on_pushButton_2_clicked()
 }
 
 void AjouterEtudiant::on_pushButton_AjouterEtud_clicked()
-{   db.setHostName("localhost");
-    db.setDatabaseName("bdd_projet_cpp");
-    db.setUserName("user_projet_cpp");
-    db.setPassword("Sokhna");
-    db.open();
+{
+    connectDB.openConnexion();
 
     QString nom,prenom,num_Etudiant,date_de_naissance,num_de_tel,adresse;
     nom=ui->lineEditNom->text();
@@ -57,9 +55,9 @@ void AjouterEtudiant::on_pushButton_AjouterEtud_clicked()
 
     this -> etudiantCourant = etudiant1;
 
-    QSqlQuery qry(db);
+    QSqlQuery qry(connectDB.getConnexion());
 
-    if(db.open()){
+    if(connectDB.dbIsOpened()){
 
     qry.prepare("INSERT INTO etudiants (numero_etudiant, nom, prenom, date_de_naissance, numero_de_telephone, adresse)"
                 "VALUES (:newNum_Etudiant,:newNom,:newPrenom,:newDate_de_naissance,:newNum_de_Tel,:newAdresse)");
@@ -74,7 +72,7 @@ void AjouterEtudiant::on_pushButton_AjouterEtud_clicked()
    if(ok2){
 
     QMessageBox::information(this,"Reussite","Le nouveau étudiant a été ajouté avec succès");
-    db.close();
+    connectDB.closeConnexion();
     this->close();
 
    }else
