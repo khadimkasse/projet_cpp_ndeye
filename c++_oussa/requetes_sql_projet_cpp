@@ -11,3 +11,9 @@ mysql -h localhost -u user_projet_cpp -p bdd_projet_cpp
 //mot de passe : Sokhna
 
 CREATE TABLE etudiants(numero_etudiant int, nom varchar(255), prenom varchar(255), date_de_naissance varchar(255), numero_de_telephone varchar(255), adresse varchar(255));
+//Ajout de la colonne formation
+ALTER TABLE etudiants ADD COLUMN formation VARCHAR(255);
+
+
+//Création de la table matière
+create table matiere(nom varchar(255), coefficient int);

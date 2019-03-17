@@ -25,7 +25,9 @@ SOURCES += main.cpp\
     afficheretudiants.cpp \
     connectdb.cpp \
     supprimeretudiant.cpp \
-    modifieretudiant.cpp
+    modifieretudiant.cpp \
+    Matiere_UI/ajoutermatiere.cpp \
+    Matiere_UI/affichermatieres.cpp
 
 HEADERS  += mainwindow.h \
     platforme1.h \
@@ -39,7 +41,9 @@ HEADERS  += mainwindow.h \
     afficheretudiants.h \
     connectdb.h \
     supprimeretudiant.h \
-    modifieretudiant.h
+    modifieretudiant.h \
+    Matiere_UI/ajoutermatiere.h \
+    Matiere_UI/affichermatieres.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \
@@ -48,7 +52,9 @@ FORMS    += mainwindow.ui \
     ajouteretudiant.ui \
     afficheretudiants.ui \
     supprimeretudiant.ui \
-    modifieretudiant.ui
+    modifieretudiant.ui \
+    Matiere_UI/ajoutermatiere.ui \
+    Matiere_UI/affichermatieres.ui
 
 DISTFILES += \
     requetes_sql_projet_cpp

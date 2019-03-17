@@ -25,7 +25,7 @@ private slots:
 
 private:
     Ui::AjouterEtudiant *ui;
-    Etudiant etudiantCourant;
+    Etudiant* etudiantCourant;
 };
 
 #endif // AJOUTERETUDIANT_H

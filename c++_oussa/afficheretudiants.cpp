@@ -16,7 +16,7 @@ AfficherEtudiants::AfficherEtudiants(QWidget *parent) :
     QSqlQueryModel* modal=new QSqlQueryModel();
     connectDB.openConnexion();
     QSqlQuery* qry=new QSqlQuery(connectDB.getConnexion());
-    qry -> prepare("select * from etudiants;");
+    qry -> prepare("select * from etudiants order by numero_etudiant;");
     qry->exec();
     modal -> setQuery(*qry);
     ui->tableView->setModel(modal);

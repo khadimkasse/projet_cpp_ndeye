@@ -42,31 +42,24 @@ void AjouterEtudiant::on_pushButton_AjouterEtud_clicked()
 {
     connectDB.openConnexion();
 
-    QString nom,prenom,num_Etudiant,date_de_naissance,num_de_tel,adresse;
-    nom=ui->lineEditNom->text();
-    prenom=ui->lineEditPrenom->text();
-    num_Etudiant=ui->lineEditNumeroEtudiant->text();
-    date_de_naissance =ui->lineEditDateDeNaissance->text();
-    num_de_tel=ui->lineEditNumTel->text();
-    adresse=ui->lineEditAdresse->text();
-
-    Etudiant etudiant1(nom.toStdString(), prenom.toStdString(), num_Etudiant.toInt(),
-                       num_de_tel.toStdString(),date_de_naissance.toStdString(), adresse.toStdString(), "");
-
-    this -> etudiantCourant = etudiant1;
+    this -> etudiantCourant = new Etudiant(ui->lineEditNom->text().toStdString(), ui->lineEditPrenom->text().toStdString(),
+            ui->lineEditNumeroEtudiant->text().toInt(),ui->lineEditNumTel->text().toStdString(),
+            ui->lineEditDateDeNaissance->text().toStdString(), ui->lineEditAdresse->text().toStdString(),
+            ui->lineEditFormation->text().toStdString());
 
     QSqlQuery qry(connectDB.getConnexion());
 
     if(connectDB.dbIsOpened()){
 
-    qry.prepare("INSERT INTO etudiants (numero_etudiant, nom, prenom, date_de_naissance, numero_de_telephone, adresse)"
-                "VALUES (:newNum_Etudiant,:newNom,:newPrenom,:newDate_de_naissance,:newNum_de_Tel,:newAdresse)");
-    qry.bindValue(":newNum_Etudiant",num_Etudiant);
-    qry.bindValue(":newNom", nom);
-    qry.bindValue(":newPrenom",prenom);
-    qry.bindValue(":newDate_de_naissance",date_de_naissance);
-    qry.bindValue(":newNum_de_Tel",num_de_tel);
-    qry.bindValue(":newAdresse",adresse);
+    qry.prepare("INSERT INTO etudiants (numero_etudiant, nom, prenom, date_de_naissance, numero_de_telephone, adresse, formation)"
+                "VALUES (:newNum_Etudiant,:newNom,:newPrenom,:newDate_de_naissance,:newNum_de_Tel,:newAdresse, :newFormation)");
+    qry.bindValue(":newNum_Etudiant",etudiantCourant->getIdentifiant());
+    qry.bindValue(":newNom", QString::fromStdString(etudiantCourant->getNom()));
+    qry.bindValue(":newPrenom",QString::fromStdString(etudiantCourant->getPrenom()));
+    qry.bindValue(":newDate_de_naissance",QString::fromStdString(etudiantCourant->getDateDeNaissance()));
+    qry.bindValue(":newNum_de_Tel",QString::fromStdString(etudiantCourant->getNumeroTelephone()));
+    qry.bindValue(":newAdresse",QString::fromStdString(etudiantCourant->getAdresse()));
+    qry.bindValue(":newFormation",QString::fromStdString(etudiantCourant->getFormation()));
     bool ok2 = qry.exec();
 
    if(ok2){

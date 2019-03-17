@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Fenetre Choix</string>
+   <string>Choisissez un menu</string>
   </property>
   <widget class="QTableWidget" name="tableWidget">
    <property name="geometry">

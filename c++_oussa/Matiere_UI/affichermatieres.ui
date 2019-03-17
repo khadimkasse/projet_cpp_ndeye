@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AfficherEtudiants</class>
- <widget class="QDialog" name="AfficherEtudiants">
+ <class>AfficherMatieres</class>
+ <widget class="QDialog" name="AfficherMatieres">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>537</width>
-    <height>361</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Affichage des étudiants</string>
+   <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="cancel">
+  <widget class="QPushButton" name="retour">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>320</y>
+     <x>150</x>
+     <y>250</y>
      <width>89</width>
      <height>25</height>
     </rect>
@@ -29,10 +29,10 @@
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>511</width>
-     <height>301</height>
+     <x>10</x>
+     <y>30</y>
+     <width>371</width>
+     <height>211</height>
     </rect>
    </property>
   </widget>

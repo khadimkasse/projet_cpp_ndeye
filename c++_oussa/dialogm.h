@@ -16,7 +16,10 @@ public:
     ~DialogM();
 
 private slots:
-    void on_pushButton_4_clicked();
+
+    void on_retour_clicked();
+
+    void on_ajouterMatiere_clicked();
 
 private:
     Ui::DialogM *ui;

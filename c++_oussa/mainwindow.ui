@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Identification</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="groupBox">
@@ -45,7 +45,7 @@
        <x>10</x>
        <y>30</y>
        <width>240</width>
-       <height>58</height>
+       <height>60</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
@@ -68,7 +68,7 @@
         <item>
          <widget class="QLabel" name="label_2">
           <property name="text">
-           <string>Mot de pass</string>
+           <string>Mot de passe</string>
           </property>
          </widget>
         </item>
