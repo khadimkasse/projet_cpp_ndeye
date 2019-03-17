@@ -86,6 +86,8 @@ void ModifierEtudiant::on_pushButton_2_clicked()
         if(queryOK) {
             connectDB.closeConnexion();
             QMessageBox::information(this, "Modification", "Les informations de l'étudiant ont bien été modifiés.");
+        } else {
+            QMessageBox::critical(this,"Erreur","Une erreur s'est produite lors de la modification des informations de l'étudiant.");
         }
     }
     ui->dernierNumeroEtudiant ->setText("");

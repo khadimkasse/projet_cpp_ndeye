@@ -15,6 +15,9 @@ public:
     explicit AfficherMatieres(QWidget *parent = 0);
     ~AfficherMatieres();
 
+private slots:
+    void on_retour_clicked();
+
 private:
     Ui::AfficherMatieres *ui;
 };

@@ -16,4 +16,4 @@ ALTER TABLE etudiants ADD COLUMN formation VARCHAR(255);
 
 
 //Création de la table matière
-create table matiere(nom varchar(255), coefficient int);
+create table matieres(nom varchar(255), coefficient int);

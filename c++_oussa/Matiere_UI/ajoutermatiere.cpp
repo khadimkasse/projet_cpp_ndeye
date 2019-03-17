@@ -34,7 +34,7 @@ void AjouterMatiere::on_ajouterMatiere_clicked() {
     this -> matiere = new Matiere(ui -> nomMatiere ->text().toStdString(),(ui -> coefficient ->text().toInt()));
     QSqlQuery* qry = new QSqlQuery(connectDB.getConnexion());
     if(connectDB.dbIsOpened()){
-        qry->prepare("INSERT INTO matiere (nom, coefficient) "
+        qry->prepare("INSERT INTO matieres (nom, coefficient) "
                     "VALUES (:newNomMatiere,:newCoefficient);");
         qry->bindValue(":newNomMatiere",  QString::fromStdString(matiere->getNomMatiere()));
         qry->bindValue(":newCoefficient", matiere->getCoefficient());

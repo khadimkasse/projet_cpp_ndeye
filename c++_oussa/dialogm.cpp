@@ -2,6 +2,9 @@
 #include "ui_dialogm.h"
 #include "platforme1.h"
 #include "Matiere_UI/ajoutermatiere.h"
+#include "Matiere_UI/affichermatieres.h"
+#include "Matiere_UI/supprimermatiere.h"
+#include "Matiere_UI/modifiermatiere.h"
 
 DialogM::DialogM(QWidget *parent) :
     QDialog(parent),
@@ -29,4 +32,28 @@ void DialogM::on_ajouterMatiere_clicked()
     AjouterMatiere ajouterMatiere;
     ajouterMatiere.setModal(true);
     ajouterMatiere.exec();
+}
+
+void DialogM::on_afficherMatieres_clicked()
+{
+    hide();
+    AfficherMatieres afficherMatieres;
+    afficherMatieres.setModal(true);
+    afficherMatieres.exec();
+}
+
+void DialogM::on_supprimerMatiere_clicked()
+{
+    hide();
+    SupprimerMatiere supprimerMatiere;
+    supprimerMatiere.setModal(true);
+    supprimerMatiere.exec();
+}
+
+void DialogM::on_modifierMatiere_clicked()
+{
+    hide();
+    ModifierMatiere modifierMatiere;
+    modifierMatiere.setModal(true);
+    modifierMatiere.exec();
 }

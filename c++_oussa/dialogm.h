@@ -21,6 +21,12 @@ private slots:
 
     void on_ajouterMatiere_clicked();
 
+    void on_afficherMatieres_clicked();
+
+    void on_supprimerMatiere_clicked();
+
+    void on_modifierMatiere_clicked();
+
 private:
     Ui::DialogM *ui;
 };

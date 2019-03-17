@@ -27,7 +27,9 @@ SOURCES += main.cpp\
     supprimeretudiant.cpp \
     modifieretudiant.cpp \
     Matiere_UI/ajoutermatiere.cpp \
-    Matiere_UI/affichermatieres.cpp
+    Matiere_UI/affichermatieres.cpp \
+    Matiere_UI/supprimermatiere.cpp \
+    Matiere_UI/modifiermatiere.cpp
 
 HEADERS  += mainwindow.h \
     platforme1.h \
@@ -43,7 +45,9 @@ HEADERS  += mainwindow.h \
     supprimeretudiant.h \
     modifieretudiant.h \
     Matiere_UI/ajoutermatiere.h \
-    Matiere_UI/affichermatieres.h
+    Matiere_UI/affichermatieres.h \
+    Matiere_UI/supprimermatiere.h \
+    Matiere_UI/modifiermatiere.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \
@@ -54,7 +58,9 @@ FORMS    += mainwindow.ui \
     supprimeretudiant.ui \
     modifieretudiant.ui \
     Matiere_UI/ajoutermatiere.ui \
-    Matiere_UI/affichermatieres.ui
+    Matiere_UI/affichermatieres.ui \
+    Matiere_UI/supprimermatiere.ui \
+    Matiere_UI/modifiermatiere.ui
 
 DISTFILES += \
     requetes_sql_projet_cpp

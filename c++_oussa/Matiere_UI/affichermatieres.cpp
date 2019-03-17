@@ -1,6 +1,12 @@
 #include "affichermatieres.h"
 #include "ui_affichermatieres.h"
 #include "../dialogm.h"
+#include "../connectdb.h"
+#include <QtSql>
+#include <QtDebug>
+#include<QDebug>
+#include <QSqlQuery>
+#include <QMessageBox>
 
 AfficherMatieres::AfficherMatieres(QWidget *parent) :
     QDialog(parent),
@@ -12,9 +18,13 @@ AfficherMatieres::AfficherMatieres(QWidget *parent) :
     connectDB.openConnexion();
     QSqlQuery* qry=new QSqlQuery(connectDB.getConnexion());
     qry -> prepare("select * from matieres order by nom;");
-    qry->exec();
-    modal -> setQuery(*qry);
-    ui->tableView->setModel(modal);
+    bool queryOK = qry->exec();
+    if(queryOK) {
+        modal -> setQuery(*qry);
+        ui->tableView->setModel(modal);
+    } else {
+        QMessageBox::critical(this,"Erreur","Une erreur s'est produite lors de l'affichage des matières.");
+    }
     connectDB.closeConnexion();
 }
 
