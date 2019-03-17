@@ -51,7 +51,7 @@ void AjouterEtudiant::on_pushButton_AjouterEtud_clicked()
     adresse=ui->lineEditAdresse->text();
 
     Etudiant etudiant1(nom.toStdString(), prenom.toStdString(), num_Etudiant.toInt(),
-                       num_de_tel.toStdString(), adresse.toStdString(), "");
+                       num_de_tel.toStdString(),date_de_naissance.toStdString(), adresse.toStdString(), "");
 
     this -> etudiantCourant = etudiant1;
 

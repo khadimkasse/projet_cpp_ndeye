@@ -8,7 +8,7 @@ class Personne
 //méthodes
 	public:
 
-	Personne(std::string prenom, std::string nom, int identifiant, 
+    Personne(std::string prenom, std::string nom, int identifiant, std::string numeroTelephone,
 	std::string dateDeNaissance, std::string adresse); 
     Personne();
 
@@ -17,11 +17,15 @@ class Personne
 	std::string getNom(); 
 	void setNom(std::string nom); 
 	int getIdentifiant(); 
+    std::string getNumeroTelephone();
+    void setNumeroTelephone(std::string prenom);
 	void setIdentifiant(int identifiant); 
 	std::string getDateDeNaissance(); 
 	void setDateDeNaissance(std::string); 
 	std::string getAdresse();
 	void setAdresse(std::string adresse);
+    void updateInfos(std::string prenom, std::string nom, int identifiant, std::string numeroTelephone,
+                        std::string dateDeNaissance, std::string adresse);
 
 	~Personne();
 
@@ -31,6 +35,7 @@ class Personne
 	std::string prenom;
 	std::string nom;
 	int identifiant;
+    std::string numeroTelephone;
 	std::string dateDeNaissance; 
 	std::string adresse; 
 };

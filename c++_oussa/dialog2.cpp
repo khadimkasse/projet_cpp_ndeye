@@ -4,6 +4,8 @@ Devrait constituer un menu principal permettant d'accéder aux autres pages de l
 #include "ui_dialog2.h"
 #include "ajouteretudiant.h"
 #include "afficheretudiants.h"
+#include "supprimeretudiant.h"
+#include "modifieretudiant.h"
 #include "platforme1.h"
 #include <QMessageBox>
 
@@ -37,7 +39,10 @@ void Dialog2::on_pushButton_5_clicked()
 
 void Dialog2::on_pushButton_3_clicked()
 {
-
+    hide();
+    ModifierEtudiant modifierEtudiant;
+    modifierEtudiant.setModal(true);
+    modifierEtudiant.exec();
 }
 
 void Dialog2::on_pushButton_4_clicked()
@@ -46,4 +51,12 @@ void Dialog2::on_pushButton_4_clicked()
     AfficherEtudiants afficherEtudiants;
     afficherEtudiants.setModal(true);
     afficherEtudiants.exec();
+}
+
+void Dialog2::on_pushButton_2_clicked()
+{
+    hide();
+    SupprimerEtudiant supprimerEtudiant;
+    supprimerEtudiant.setModal(true);
+    supprimerEtudiant.exec();
 }

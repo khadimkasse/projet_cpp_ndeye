@@ -12,16 +12,18 @@ class Etudiant : public Personne
 //Signifie : créer une classe Etudiant qui hérite de la classe Personne
 {
 	public:
-	Etudiant(std::string prenom, std::string nom, int identifiant, 
+    Etudiant(std::string prenom, std::string nom, int identifiant, std::string numeroTelephone,
 	std::string dateDeNaissance, std::string adresse, std::string formation, 
 	Note *notesEtudiant);// A TESTER : tableau de notes OK ? //Etudiant(Personne personne, std::string formation, Note *notesEtudiant)
-    Etudiant(std::string prenom, std::string nom, int identifiant,
+    Etudiant(std::string prenom, std::string nom, int identifiant, std::string numeroTelephone,
     std::string dateDeNaissance, std::string adresse, std::string formation);
     std::string getFormation();
     Etudiant();
 	void setFormation(std::string formation);
 	Note *getNotesEtudiant(); // a tester le placement du *
 	void setNotesEtudiant(Note *notesEtudiant);
+    void updateInfos(std::string prenom, std::string nom, int identifiant, std::string numeroTelephone,
+                        std::string dateDeNaissance, std::string adresse, std::string formation);
 	~Etudiant();
 
 	private:

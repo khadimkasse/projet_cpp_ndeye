@@ -1,11 +1,12 @@
 #include "Personne.h"
 using namespace std;
 
-Personne::Personne(std::string prenom, std::string nom, int identifiant, 
+Personne::Personne(std::string prenom, std::string nom, int identifiant, string numeroTelephone,
 std::string dateDeNaissance, std::string adresse) {
 	this->prenom = prenom; 
 	this->nom = nom; 
 	this->identifiant = identifiant;
+    this->numeroTelephone = numeroTelephone;
 	this->dateDeNaissance = dateDeNaissance;
 	this->adresse = adresse;	
 } 
@@ -39,8 +40,26 @@ int Personne::getIdentifiant(){
 	return identifiant;
 }
 
+void Personne::updateInfos(string prenom, string nom, int identifiant,
+                              string numeroTelephone, string dateDeNaissance, string adresse) {
+    this -> setPrenom(prenom);
+    this -> setNom(nom);
+    this -> setIdentifiant(identifiant);
+    this -> setNumeroTelephone(numeroTelephone);
+    this -> setDateDeNaissance(dateDeNaissance);
+    this -> setAdresse(adresse);
+}
+
 void Personne::setIdentifiant(int identifiant){
 	this->identifiant = identifiant;
+}
+
+string Personne::getNumeroTelephone(){
+    return numeroTelephone;
+}
+
+void Personne::setNumeroTelephone(string nom){
+    this->numeroTelephone = nom;
 }
 
 string Personne::getDateDeNaissance(){
