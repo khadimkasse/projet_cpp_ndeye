@@ -22,6 +22,7 @@ SOURCES += main.cpp\
     ../sokhna_cpp/Etudiant.cpp \
     ../sokhna_cpp/Note.cpp \
     ../sokhna_cpp/Matiere.cpp \
+    ../sokhna_cpp/Professeur.cpp \
     afficheretudiants.cpp \
     connectdb.cpp \
     supprimeretudiant.cpp \
@@ -29,7 +30,13 @@ SOURCES += main.cpp\
     Matiere_UI/ajoutermatiere.cpp \
     Matiere_UI/affichermatieres.cpp \
     Matiere_UI/supprimermatiere.cpp \
-    Matiere_UI/modifiermatiere.cpp
+    Matiere_UI/modifiermatiere.cpp \
+    Professeur_UI/menuprofesseur.cpp \
+    Professeur_UI/ajouterprofesseur.cpp \
+    Gestion_UI/menugestion.cpp \
+    Gestion_UI/gestionetudiants.cpp \
+    Gestion_UI/noteretudiant.cpp \
+    Gestion_UI/gestionprofesseurs.cpp
 
 HEADERS  += mainwindow.h \
     platforme1.h \
@@ -40,6 +47,7 @@ HEADERS  += mainwindow.h \
     ../sokhna_cpp/Etudiant.h\
     ../sokhna_cpp/Note.h \
     ../sokhna_cpp/Matiere.h \
+    ../sokhna_cpp/Professeur.h \
     afficheretudiants.h \
     connectdb.h \
     supprimeretudiant.h \
@@ -47,7 +55,13 @@ HEADERS  += mainwindow.h \
     Matiere_UI/ajoutermatiere.h \
     Matiere_UI/affichermatieres.h \
     Matiere_UI/supprimermatiere.h \
-    Matiere_UI/modifiermatiere.h
+    Matiere_UI/modifiermatiere.h \
+    Professeur_UI/menuprofesseur.h \
+    Professeur_UI/ajouterprofesseur.h \
+    Gestion_UI/menugestion.h \
+    Gestion_UI/gestionetudiants.h \
+    Gestion_UI/noteretudiant.h \
+    Gestion_UI/gestionprofesseurs.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \
@@ -60,7 +74,13 @@ FORMS    += mainwindow.ui \
     Matiere_UI/ajoutermatiere.ui \
     Matiere_UI/affichermatieres.ui \
     Matiere_UI/supprimermatiere.ui \
-    Matiere_UI/modifiermatiere.ui
+    Matiere_UI/modifiermatiere.ui \
+    Professeur_UI/menuprofesseur.ui \
+    Professeur_UI/ajouterprofesseur.ui \
+    Gestion_UI/menugestion.ui \
+    Gestion_UI/gestionetudiants.ui \
+    Gestion_UI/noteretudiant.ui \
+    Gestion_UI/gestionprofesseurs.ui
 
 DISTFILES += \
     requetes_sql_projet_cpp
