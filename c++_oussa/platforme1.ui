@@ -60,14 +60,14 @@
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="espaceProfesseur">
       <property name="text">
        <string>Espace Professeur</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="espaceGestion">
       <property name="text">
        <string>Gestion</string>
       </property>

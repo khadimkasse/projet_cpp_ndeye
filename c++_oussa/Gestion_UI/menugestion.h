@@ -15,6 +15,9 @@ public:
     explicit MenuGestion(QWidget *parent = 0);
     ~MenuGestion();
 
+private slots:
+    void on_retour_clicked();
+
 private:
     Ui::MenuGestion *ui;
 };

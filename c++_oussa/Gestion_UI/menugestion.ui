@@ -16,15 +16,15 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>121</y>
-     <width>361</width>
-     <height>27</height>
+     <x>10</x>
+     <y>90</y>
+     <width>381</width>
+     <height>31</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QPushButton" name="gestionEtudiants">
+     <widget class="QPushButton" name="gestioEtudiantsn">
       <property name="text">
        <string>Etudiants</string>
       </property>
@@ -33,11 +33,24 @@
     <item>
      <widget class="QPushButton" name="gestionProfesseurs">
       <property name="text">
-       <string>Professeurs</string>
+       <string>Professeur</string>
       </property>
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="retour">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>220</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Retour</string>
+   </property>
   </widget>
  </widget>
  <resources/>

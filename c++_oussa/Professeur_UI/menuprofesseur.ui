@@ -24,28 +24,28 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="ajoutProfesseur">
       <property name="text">
        <string>Ajouter un professeur</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="suppressionProfesseur">
       <property name="text">
        <string>Supprimer un professeur</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="modificationProfesseur">
       <property name="text">
        <string>Modifier un professeur</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="affichageProfesseurs">
       <property name="text">
        <string>Afficher les proffesseurs</string>
       </property>

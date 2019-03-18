@@ -33,10 +33,10 @@ SOURCES += main.cpp\
     Matiere_UI/modifiermatiere.cpp \
     Professeur_UI/menuprofesseur.cpp \
     Professeur_UI/ajouterprofesseur.cpp \
-    Gestion_UI/menugestion.cpp \
     Gestion_UI/gestionetudiants.cpp \
     Gestion_UI/noteretudiant.cpp \
-    Gestion_UI/gestionprofesseurs.cpp
+    Gestion_UI/gestionprofesseurs.cpp \
+    Gestion_UI/menugestion.cpp
 
 HEADERS  += mainwindow.h \
     platforme1.h \
@@ -58,10 +58,10 @@ HEADERS  += mainwindow.h \
     Matiere_UI/modifiermatiere.h \
     Professeur_UI/menuprofesseur.h \
     Professeur_UI/ajouterprofesseur.h \
-    Gestion_UI/menugestion.h \
     Gestion_UI/gestionetudiants.h \
     Gestion_UI/noteretudiant.h \
-    Gestion_UI/gestionprofesseurs.h
+    Gestion_UI/gestionprofesseurs.h \
+    Gestion_UI/menugestion.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \
@@ -77,10 +77,10 @@ FORMS    += mainwindow.ui \
     Matiere_UI/modifiermatiere.ui \
     Professeur_UI/menuprofesseur.ui \
     Professeur_UI/ajouterprofesseur.ui \
-    Gestion_UI/menugestion.ui \
     Gestion_UI/gestionetudiants.ui \
     Gestion_UI/noteretudiant.ui \
-    Gestion_UI/gestionprofesseurs.ui
+    Gestion_UI/gestionprofesseurs.ui \
+    Gestion_UI/menugestion.ui
 
 DISTFILES += \
     requetes_sql_projet_cpp

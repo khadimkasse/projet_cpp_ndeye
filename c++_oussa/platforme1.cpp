@@ -5,6 +5,7 @@ laquelle on a le choix d'aller vers les espaces étudiant ou matière. */
 #include"dialog2.h"
 #include "dialogm.h"
 #include "Professeur_UI/menuprofesseur.h"
+#include "Gestion_UI/menugestion.h"
 
 Platforme1::Platforme1(QWidget *parent) :
     QDialog(parent),
@@ -43,5 +44,13 @@ void Platforme1::on_espaceProfesseur_clicked()
     hide();
     MenuProfesseur menuProfesseur;
     menuProfesseur.setModal(true);
-    menuProfesseur.exec()
+    menuProfesseur.exec();
+}
+
+void Platforme1::on_espaceGestion_clicked()
+{
+    hide();
+    MenuGestion menuGestion;
+    menuGestion.setModal(true);
+    menuGestion.exec();
 }

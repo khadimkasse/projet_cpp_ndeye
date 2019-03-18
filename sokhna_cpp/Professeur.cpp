@@ -1,9 +1,9 @@
 #include "Professeur.h"
 using namespace std;
 
-Professeur::Professeur(string prenom, string nom, int identifiant, 
+Professeur::Professeur(string prenom, string nom, int identifiant, string numeroTelephone,
 string dateDeNaissance, string adresse, Matiere matiere, 
-bool PaiementOk) : Personne(prenom, nom, identifiant, dateDeNaissance, adresse){
+bool PaiementOk) : Personne(prenom, nom, identifiant, numeroTelephone, dateDeNaissance, adresse){
 	this->matiere = matiere; 
 	this->paiementOk = paiementOk; 
 }

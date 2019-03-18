@@ -9,7 +9,7 @@ class Professeur  : public Personne
 
 {
 	public:
-	Professeur(std::string prenom, std::string nom, int identifiant, 
+    Professeur(std::string prenom, std::string nom, int identifiant, std::string numeroTelephone,
 	std::string dateDeNaissance, std::string adresse, Matiere matiere, bool PaiementOk);
 	Matiere getMatiere();
 	void setMatiere(Matiere matiere);
