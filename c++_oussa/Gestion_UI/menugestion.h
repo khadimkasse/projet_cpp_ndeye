@@ -18,6 +18,10 @@ public:
 private slots:
     void on_retour_clicked();
 
+    void on_gestioEtudiantsn_clicked();
+
+    void on_gestionProfesseurs_clicked();
+
 private:
     Ui::MenuGestion *ui;
 };

@@ -36,7 +36,8 @@ SOURCES += main.cpp\
     Gestion_UI/gestionetudiants.cpp \
     Gestion_UI/noteretudiant.cpp \
     Gestion_UI/gestionprofesseurs.cpp \
-    Gestion_UI/menugestion.cpp
+    Gestion_UI/menugestion.cpp \
+    Gestion_UI/detailsnotes.cpp
 
 HEADERS  += mainwindow.h \
     platforme1.h \
@@ -61,7 +62,8 @@ HEADERS  += mainwindow.h \
     Gestion_UI/gestionetudiants.h \
     Gestion_UI/noteretudiant.h \
     Gestion_UI/gestionprofesseurs.h \
-    Gestion_UI/menugestion.h
+    Gestion_UI/menugestion.h \
+    Gestion_UI/detailsnotes.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \
@@ -80,7 +82,8 @@ FORMS    += mainwindow.ui \
     Gestion_UI/gestionetudiants.ui \
     Gestion_UI/noteretudiant.ui \
     Gestion_UI/gestionprofesseurs.ui \
-    Gestion_UI/menugestion.ui
+    Gestion_UI/menugestion.ui \
+    Gestion_UI/detailsnotes.ui
 
 DISTFILES += \
     requetes_sql_projet_cpp

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Rajouterune note à un étudiant</string>
   </property>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
@@ -31,7 +31,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="inputNumeroEtudiant"/>
     </item>
    </layout>
   </widget>
@@ -53,7 +53,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox"/>
+     <widget class="QComboBox" name="matieres"/>
     </item>
    </layout>
   </widget>
@@ -75,11 +75,24 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputNote"/>
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="retour">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -92,7 +105,7 @@
     <string>Retour</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="enregistrerNote">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -105,12 +118,6 @@
     <string>Enregistrer</string>
    </property>
   </widget>
-  <zorder>horizontalLayoutWidget</zorder>
-  <zorder>horizontalLayoutWidget_2</zorder>
-  <zorder>horizontalLayoutWidget_3</zorder>
-  <zorder>label_3</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>pushButton_2</zorder>
  </widget>
  <resources/>
  <connections/>

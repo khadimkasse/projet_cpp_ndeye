@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Note::Note(float noteSurVingt, Matiere matiere) {
+Note::Note(float noteSurVingt, Matiere* matiere) {
 	this->noteSurVingt = noteSurVingt; 
 	this->matiere = matiere;
 }
@@ -17,9 +17,9 @@ float Note::getNoteSurVingt() {
 void Note::setNoteSurVingt(int noteSurVingt) {
 	this->noteSurVingt = noteSurVingt; 
 }
-Matiere Note::getMatiere() {
+Matiere* Note::getMatiere() {
 	return matiere; 
 } 
-void Note::setMatiere(Matiere matiere) {
+void Note::setMatiere(Matiere* matiere) {
 	this->matiere = matiere; 
 }

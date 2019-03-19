@@ -15,6 +15,14 @@ public:
     explicit GestionEtudiants(QWidget *parent = 0);
     ~GestionEtudiants();
 
+private slots:
+
+    void on_retour_clicked();
+
+    void on_noterEtudiant_clicked();
+
+    void on_consulterNotes_clicked();
+
 private:
     Ui::GestionEtudiants *ui;
 };

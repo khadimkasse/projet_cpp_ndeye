@@ -17,3 +17,5 @@ ALTER TABLE etudiants ADD COLUMN formation VARCHAR(255);
 
 //Création de la table matière
 create table matieres(nom varchar(255), coefficient int);
+
+create table notes(numero_etudiant int, nom_matiere varchar(255), note float);

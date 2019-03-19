@@ -24,14 +24,14 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="noterEtudiant">
       <property name="text">
        <string>Noter un étudiant</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="consulterNotes">
       <property name="text">
        <string>Consulter les notes</string>
       </property>
@@ -39,7 +39,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="retour">
    <property name="geometry">
     <rect>
      <x>260</x>

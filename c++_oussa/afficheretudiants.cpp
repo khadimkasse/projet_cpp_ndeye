@@ -11,7 +11,7 @@ AfficherEtudiants::AfficherEtudiants(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AfficherEtudiants)
 {
-     ui->setupUi(this);
+    ui->setupUi(this);
     ConnectDB connectDB;
     QSqlQueryModel* modal=new QSqlQueryModel();
     connectDB.openConnexion();

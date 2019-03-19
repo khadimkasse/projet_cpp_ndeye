@@ -1,6 +1,8 @@
 #include "menugestion.h"
 #include "ui_menugestion.h"
 #include "../platforme1.h"
+#include "gestionetudiants.h"
+#include "gestionprofesseurs.h"
 
 MenuGestion::MenuGestion(QWidget *parent) :
     QDialog(parent),
@@ -20,4 +22,20 @@ void MenuGestion::on_retour_clicked()
     Platforme1 plf1;
     plf1.setModal(true);
     plf1.exec();
+}
+
+void MenuGestion::on_gestioEtudiantsn_clicked()
+{
+    hide();
+    GestionEtudiants gestionEtudiants;
+    gestionEtudiants.setModal(true);
+    gestionEtudiants.exec();
+}
+
+void MenuGestion::on_gestionProfesseurs_clicked()
+{
+    hide();
+    GestionProfesseurs gestionProfesseurs;
+    gestionProfesseurs.setModal(true);
+    gestionProfesseurs.exec();
 }

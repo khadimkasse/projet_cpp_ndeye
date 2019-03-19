@@ -6,19 +6,19 @@
 class Note
 {
 	public : 
-	Note(float noteSurVingt, Matiere matiere);
+    Note(float noteSurVingt, Matiere* matiere);
 	Note();
 
 	float getNoteSurVingt(); 
 	void setNoteSurVingt(int noteSurVingt); 
-	Matiere getMatiere(); 
-	void setMatiere(Matiere matiere);
+    Matiere* getMatiere();
+    void setMatiere(Matiere* matiere);
 
 	~Note();
 
 	private : 
 	float noteSurVingt; 
-	Matiere matiere; 
+    Matiere* matiere;
 };
 
 #endif
