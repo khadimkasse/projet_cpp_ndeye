@@ -1,5 +1,6 @@
 #include "ajouterprofesseur.h"
 #include "ui_ajouterprofesseur.h"
+#include "menuprofesseur.h"
 
 AjouterProfesseur::AjouterProfesseur(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +12,17 @@ AjouterProfesseur::AjouterProfesseur(QWidget *parent) :
 AjouterProfesseur::~AjouterProfesseur()
 {
     delete ui;
+}
+
+void AjouterProfesseur::on_retour_clicked()
+{
+    hide();
+    MenuProfesseur menuPreofesseur;
+    menuPreofesseur.setModal(true);
+    menuPreofesseur.exec();
+}
+
+void AjouterProfesseur::on_ajouter_clicked()
+{
+
 }

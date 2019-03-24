@@ -37,7 +37,7 @@ void DetailsNotes::on_rechercheEtudiants_clicked()
                    " matieres.coefficient, notes.note from "
                    "notes INNER JOIN matieres "
                    "ON notes.nom_matiere=matieres.nom where "
-                   "notes.numero_etudiant=:newNumeroEtudiant;");
+                   "notes.numero_etudiant=:newNumeroEtudiant order by matieres.nom;");
     qry -> bindValue(":newNumeroEtudiant", ui -> numeroEtudiant -> text().toInt());
     qry->exec();
     modal -> setQuery(*qry);

@@ -1,74 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ModifierEtudiant</class>
- <widget class="QDialog" name="ModifierEtudiant">
+ <class>ModifierProfesseur</class>
+ <widget class="QDialog" name="ModifierProfesseur">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>343</height>
+    <height>388</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Modifier un étudiant</string>
+   <string>Dialog</string>
   </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>7</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>N° du professeur</string>
+   </property>
+  </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>90</y>
+     <x>0</x>
+     <y>80</y>
      <width>131</width>
-     <height>201</height>
+     <height>251</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="labelNom">
+     <widget class="QLabel" name="Nom">
       <property name="text">
        <string>Nom</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="labelPrenom">
+     <widget class="QLabel" name="label_5">
       <property name="text">
        <string>Prénom</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="labelNumeroEtudiant">
+     <widget class="QLabel" name="label_6">
       <property name="text">
-       <string>N. étudiant</string>
+       <string>N°Professeur</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="labelDateDeNaissance">
+     <widget class="QLabel" name="label_7">
       <property name="text">
        <string>Date de naissance</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="labelNumeroTelephone">
+     <widget class="QLabel" name="label_8">
       <property name="text">
-       <string>N. téléphone</string>
+       <string>N°Téléphone</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="labelAdresse">
+     <widget class="QLabel" name="label_9">
       <property name="text">
        <string>Adresse</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="labelFormation">
+     <widget class="QLabel" name="label_4">
       <property name="text">
-       <string>Formation</string>
+       <string>Matière</string>
       </property>
      </widget>
     </item>
@@ -77,41 +90,54 @@
   <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>90</y>
-     <width>191</width>
-     <height>213</height>
+     <x>149</x>
+     <y>80</y>
+     <width>241</width>
+     <height>251</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QLineEdit" name="nom"/>
+     <widget class="QLineEdit" name="inputnom"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="prenom"/>
+     <widget class="QLineEdit" name="inputprenom"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="noEtudiant"/>
+     <widget class="QLineEdit" name="inputnumbprofesseur"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="dateDeNaissance"/>
+     <widget class="QLineEdit" name="inputdatedenaissance"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="noTelephone"/>
+     <widget class="QLineEdit" name="inputnumbtelephone"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="adresse"/>
+     <widget class="QLineEdit" name="inputadresse"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="formation"/>
+     <widget class="QLineEdit" name="inputmatiere"/>
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="rechercher">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>310</y>
+     <x>210</x>
+     <y>50</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rechercher</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="retour">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>350</y>
      <width>89</width>
      <height>25</height>
     </rect>
@@ -120,53 +146,27 @@
     <string>Retour</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QLineEdit" name="inputprofesseur">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>310</y>
-     <width>89</width>
+     <x>140</x>
+     <y>4</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>350</y>
+     <width>131</width>
      <height>25</height>
     </rect>
    </property>
    <property name="text">
     <string>Modifier</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>151</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Numéro de l'étudiant</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="dernierNumeroEtudiant">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>10</y>
-     <width>171</width>
-     <height>25</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="rechercher">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>50</y>
-     <width>89</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Rechercher</string>
    </property>
   </widget>
  </widget>

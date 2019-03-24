@@ -18,6 +18,10 @@ public:
 private slots:
     void on_ajoutProfesseur_clicked();
 
+    void on_suppressionProfesseur_clicked();
+
+    void on_retour_clicked();
+
 private:
     Ui::MenuProfesseur *ui;
 };

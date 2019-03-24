@@ -79,4 +79,6 @@ void NoterEtudiant::on_enregistrerNote_clicked()
              QMessageBox::critical(this,"Erreur","Une erreur s'est produite lors de la sauvegarde de la note.");
          }
      }
+     ui -> matieres -> setCurrentIndex(0);
+     ui -> inputNote -> setText("");
 }

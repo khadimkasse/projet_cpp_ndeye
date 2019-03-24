@@ -7,55 +7,138 @@
     <x>0</x>
     <y>0</y>
     <width>434</width>
-    <height>373</height>
+    <height>303</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Ajouter un professeur</string>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>111</width>
-     <height>271</height>
+     <x>10</x>
+     <y>0</y>
+     <width>141</width>
+     <height>251</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="nom">
       <property name="text">
-       <string>TextLabel</string>
+       <string>Nom</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="prenom">
       <property name="text">
-       <string>TextLabel</string>
+       <string>Prénom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="numbprofesseur">
+      <property name="text">
+       <string>N° Professeur</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="datedenaissance">
+      <property name="text">
+       <string>Date de naissance</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="numbtelephone">
+      <property name="text">
+       <string>N°Téléphone</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="adresse">
+      <property name="text">
+       <string>Adresse</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>TextLabel</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Matière&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>
    </layout>
+   <zorder>nom</zorder>
+   <zorder>prenom</zorder>
+   <zorder>numbprofesseur</zorder>
+   <zorder>datedenaissance</zorder>
+   <zorder>numbtelephone</zorder>
+   <zorder>label</zorder>
+   <zorder>adresse</zorder>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>10</y>
-     <width>231</width>
-     <height>271</height>
+     <x>159</x>
+     <y>0</y>
+     <width>271</width>
+     <height>251</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="inputNom"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputPrenom"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputnumbprofesseur"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputdatedenaissance"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputnumbtelephone"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputadresse"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputMatiere"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="retour">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>270</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Retour</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ajouter">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>270</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Menu de gestion</string>
   </property>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
@@ -33,7 +33,7 @@
     <item>
      <widget class="QPushButton" name="gestionProfesseurs">
       <property name="text">
-       <string>Professeur</string>
+       <string>Professeurs</string>
       </property>
      </widget>
     </item>

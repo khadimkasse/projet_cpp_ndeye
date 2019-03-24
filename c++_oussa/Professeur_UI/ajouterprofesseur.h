@@ -15,6 +15,11 @@ public:
     explicit AjouterProfesseur(QWidget *parent = 0);
     ~AjouterProfesseur();
 
+private slots:
+    void on_retour_clicked();
+
+    void on_ajouter_clicked();
+
 private:
     Ui::AjouterProfesseur *ui;
 };
