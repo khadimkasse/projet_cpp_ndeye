@@ -10,15 +10,15 @@ class Professeur  : public Personne
 {
 	public:
     Professeur(std::string prenom, std::string nom, int identifiant, std::string numeroTelephone,
-	std::string dateDeNaissance, std::string adresse, Matiere matiere, bool PaiementOk);
-	Matiere getMatiere();
-	void setMatiere(Matiere matiere);
+    std::string dateDeNaissance, std::string adresse, Matiere* matiere, bool PaiementOk);
+    Matiere* getMatiere();
+    void setMatiere(Matiere* matiere);
 	bool getPaiementOk();
 	void setPaiementOk(bool paiementOk);
 	~Professeur();
 	
 	private:
-	Matiere matiere; 
+    Matiere* matiere;
 	bool paiementOk;
 	
 

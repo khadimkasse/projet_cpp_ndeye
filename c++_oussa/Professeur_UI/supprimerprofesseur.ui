@@ -62,7 +62,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Numéro du professeur</string>
+    <string>Numéro d'identification</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">

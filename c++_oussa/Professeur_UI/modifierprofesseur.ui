@@ -18,12 +18,12 @@
     <rect>
      <x>0</x>
      <y>7</y>
-     <width>121</width>
+     <width>131</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>N° du professeur</string>
+    <string>N° d'identification</string>
    </property>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
@@ -53,7 +53,7 @@
     <item>
      <widget class="QLabel" name="label_6">
       <property name="text">
-       <string>N°Professeur</string>
+       <string>N° d'identification</string>
       </property>
      </widget>
     </item>

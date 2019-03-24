@@ -1,5 +1,6 @@
 #ifndef AJOUTERPROFESSEUR_H
 #define AJOUTERPROFESSEUR_H
+#include "../../sokhna_cpp/Professeur.h"
 
 #include <QDialog>
 
@@ -14,6 +15,7 @@ class AjouterProfesseur : public QDialog
 public:
     explicit AjouterProfesseur(QWidget *parent = 0);
     ~AjouterProfesseur();
+    void loadComboBox();
 
 private slots:
     void on_retour_clicked();
@@ -22,6 +24,8 @@ private slots:
 
 private:
     Ui::AjouterProfesseur *ui;
+    Matiere* matiere;
+    Professeur* professeur;
 };
 
 #endif // AJOUTERPROFESSEUR_H

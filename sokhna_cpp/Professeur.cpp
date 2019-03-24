@@ -2,7 +2,7 @@
 using namespace std;
 
 Professeur::Professeur(string prenom, string nom, int identifiant, string numeroTelephone,
-string dateDeNaissance, string adresse, Matiere matiere, 
+string dateDeNaissance, string adresse, Matiere* matiere,
 bool PaiementOk) : Personne(prenom, nom, identifiant, numeroTelephone, dateDeNaissance, adresse){
 	this->matiere = matiere; 
 	this->paiementOk = paiementOk; 
@@ -10,11 +10,11 @@ bool PaiementOk) : Personne(prenom, nom, identifiant, numeroTelephone, dateDeNai
 
 Professeur::~Professeur() {}	
 
-Matiere Professeur::getMatiere() {
+Matiere* Professeur::getMatiere() {
 	return matiere;
 }
 
-void Professeur::setMatiere(Matiere Matiere) {
+void Professeur::setMatiere(Matiere* Matiere) {
 	this->matiere= matiere; 
 }
 

@@ -40,7 +40,7 @@
     <item>
      <widget class="QLabel" name="numbprofesseur">
       <property name="text">
-       <string>N° Professeur</string>
+       <string>N° d'identification</string>
       </property>
      </widget>
     </item>
@@ -110,7 +110,7 @@
      <widget class="QLineEdit" name="inputadresse"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="inputMatiere"/>
+     <widget class="QComboBox" name="matieres"/>
     </item>
    </layout>
   </widget>
