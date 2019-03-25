@@ -26,7 +26,7 @@
     <string>Rechercher</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Suppimer">
+  <widget class="QPushButton" name="supprimer">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -65,7 +65,7 @@
     <string>Numéro d'identification</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="inputNumero">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -78,9 +78,9 @@
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>20</x>
      <y>150</y>
-     <width>401</width>
+     <width>381</width>
      <height>61</height>
     </rect>
    </property>

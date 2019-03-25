@@ -21,3 +21,4 @@ create table matieres(nom varchar(255), coefficient int);
 create table notes(numero_etudiant int, nom_matiere varchar(255), note float);
 
 CREATE TABLE professeurs(numero_identification int, nom varchar(255), prenom varchar(255), date_de_naissance varchar(255), numero_de_telephone varchar(255), adresse varchar(255), matiere varchar(255));
+CREATE TABLE paiements_professeurs(numero_identification int, mois varchar(255), montant float);

@@ -18,7 +18,7 @@ class Professeur  : public Personne
 	~Professeur();
 	
 	private:
-    Matiere* matiere;
+    Matiere*     matiere;
 	bool paiementOk;
 	
 

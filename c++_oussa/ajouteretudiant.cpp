@@ -66,11 +66,17 @@ void AjouterEtudiant::on_pushButton_AjouterEtud_clicked()
 
     QMessageBox::information(this,"Reussite","Le nouveau étudiant a été ajouté avec succès");
     connectDB.closeConnexion();
-    this->close();
 
    }else
       {
         QMessageBox::critical(this,"Erreur","Erreur lors de l'ajout de l'étudiant");
        }
     }
+    ui->lineEditNom->setText("");
+    ui->lineEditPrenom->setText("");
+    ui->lineEditNumeroEtudiant->setText("");
+    ui->lineEditNumTel->setText("");
+    ui->lineEditDateDeNaissance->setText("");
+    ui->lineEditAdresse->setText("");
+    ui->lineEditFormation->setText("");
 }

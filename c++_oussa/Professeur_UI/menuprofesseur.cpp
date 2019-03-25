@@ -9,6 +9,8 @@
 #include "ajouterprofesseur.h"
 #include "supprimerprofesseur.h"
 #include "../platforme1.h"
+#include "modifierprofesseur.h"
+#include "afficherprofesseurs.h"
 MenuProfesseur::MenuProfesseur(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MenuProfesseur)
@@ -44,4 +46,20 @@ void MenuProfesseur::on_retour_clicked()
     platforme1.setModal(true);
     platforme1.exec();
 
+}
+
+void MenuProfesseur::on_modificationProfesseur_clicked()
+{
+    hide();
+    ModifierProfesseur modifierProfesseur;
+    modifierProfesseur.setModal(true);
+    modifierProfesseur.exec();
+}
+
+void MenuProfesseur::on_affichageProfesseurs_clicked()
+{
+    hide();
+    AfficherProfesseurs afficherProfesseurs;
+    afficherProfesseurs.setModal(true);
+    afficherProfesseurs.exec();
 }

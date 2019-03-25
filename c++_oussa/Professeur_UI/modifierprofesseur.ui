@@ -116,7 +116,7 @@
      <widget class="QLineEdit" name="inputadresse"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="inputmatiere"/>
+     <widget class="QComboBox" name="matieres"/>
     </item>
    </layout>
   </widget>
@@ -156,7 +156,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="modifier">
    <property name="geometry">
     <rect>
      <x>208</x>

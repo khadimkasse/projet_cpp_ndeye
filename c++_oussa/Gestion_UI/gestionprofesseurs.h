@@ -15,6 +15,11 @@ public:
     explicit GestionProfesseurs(QWidget *parent = 0);
     ~GestionProfesseurs();
 
+private slots:
+    void on_retour_clicked();
+
+    void on_enregistrer_clicked();
+
 private:
     Ui::GestionProfesseurs *ui;
 };

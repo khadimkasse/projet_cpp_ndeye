@@ -39,7 +39,10 @@ SOURCES += main.cpp\
     Gestion_UI/menugestion.cpp \
     Gestion_UI/detailsnotes.cpp \
     Professeur_UI/supprimerprofesseur.cpp \
-    Professeur_UI/modifierprofesseur.cpp
+    Professeur_UI/modifierprofesseur.cpp \
+    Professeur_UI/afficherprofesseurs.cpp \
+    Gestion_UI/afficherpaiements.cpp \
+    Gestion_UI/menugestionprofesseurs.cpp
 
 HEADERS  += mainwindow.h \
     platforme1.h \
@@ -67,7 +70,10 @@ HEADERS  += mainwindow.h \
     Gestion_UI/menugestion.h \
     Gestion_UI/detailsnotes.h \
     Professeur_UI/supprimerprofesseur.h \
-    Professeur_UI/modifierprofesseur.h
+    Professeur_UI/modifierprofesseur.h \
+    Professeur_UI/afficherprofesseurs.h \
+    Gestion_UI/afficherpaiements.h \
+    Gestion_UI/menugestionprofesseurs.h
 
 FORMS    += mainwindow.ui \
     platforme1.ui \
@@ -89,7 +95,10 @@ FORMS    += mainwindow.ui \
     Gestion_UI/menugestion.ui \
     Gestion_UI/detailsnotes.ui \
     Professeur_UI/supprimerprofesseur.ui \
-    Professeur_UI/modifierprofesseur.ui
+    Professeur_UI/modifierprofesseur.ui \
+    Professeur_UI/afficherprofesseurs.ui \
+    Gestion_UI/afficherpaiements.ui \
+    Gestion_UI/menugestionprofesseurs.ui
 
 DISTFILES += \
     requetes_sql_projet_cpp

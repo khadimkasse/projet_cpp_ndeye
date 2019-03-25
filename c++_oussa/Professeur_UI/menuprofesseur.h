@@ -22,6 +22,10 @@ private slots:
 
     void on_retour_clicked();
 
+    void on_modificationProfesseur_clicked();
+
+    void on_affichageProfesseurs_clicked();
+
 private:
     Ui::MenuProfesseur *ui;
 };

@@ -83,11 +83,17 @@ void AjouterProfesseur::on_ajouter_clicked()
    if(ok2){
         QMessageBox::information(this,"Reussite","Le nouveau professeur a été ajouté avec succès");
         connectDB.closeConnexion();
-        this->close();
-
+        loadComboBox();
+        ui -> inputPrenom -> setText("");
+        ui -> inputNom -> setText("");
+        ui -> inputnumbprofesseur -> setText("");
+        ui -> inputnumbtelephone -> setText("");
+        ui -> inputdatedenaissance -> setText("");
+        ui -> inputadresse -> setText("");
    }else
       {
         QMessageBox::critical(this,"Erreur","Erreur lors de l'ajout du professeur");
        }
     }
+
 }

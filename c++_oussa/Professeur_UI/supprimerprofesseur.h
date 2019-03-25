@@ -19,6 +19,10 @@ private slots:
 
     void on_Retour_clicked();
 
+    void on_Rechercher_clicked();
+
+    void on_supprimer_clicked();
+
 private:
     Ui::SupprimerProfesseur *ui;
 };

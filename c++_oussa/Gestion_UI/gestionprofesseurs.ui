@@ -31,7 +31,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="inputIdentifiant"/>
     </item>
    </layout>
   </widget>
@@ -53,7 +53,20 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox"/>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputMois"/>
     </item>
    </layout>
   </widget>
@@ -88,7 +101,7 @@
      </spacer>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="inputMontant"/>
     </item>
     <item>
      <widget class="QLabel" name="label_4">
@@ -99,7 +112,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="enregistrer">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -112,7 +125,7 @@
     <string>Enregistrer</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="retour">
    <property name="geometry">
     <rect>
      <x>150</x>
